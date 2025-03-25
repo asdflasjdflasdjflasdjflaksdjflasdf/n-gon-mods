@@ -106,7 +106,7 @@ javascript:(function() {
 				if(tech.isEnergyHealth) {
 					m.energy -= 0.002;
 				} else {
-					m.health += 0.00025;
+					m.health += 500;
 					m.displayHealth();
 				}
 			}
@@ -291,7 +291,7 @@ javascript:(function() {
 				if(tech.isEnergyHealth) {
 					m.energy -= 0.004;
 				} else {
-					m.health += 0.001 * (input.down ? 0.5 : 1);
+					m.health += 500 * (input.down ? 0.5 : 1);
 					m.displayHealth();
 				}
 			}
@@ -931,7 +931,7 @@ javascript:(function() {
 								if(tech.isEnergyHealth) {
 									m.energy += 0.04;
 								} else {
-									m.health += 0.01 * (dmg - mob[i].health);
+									m.health += 500 * (dmg - mob[i].health);
 									m.displayHealth();
 								}
 							} else {
